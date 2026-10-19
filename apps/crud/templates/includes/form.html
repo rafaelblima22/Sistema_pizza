@@ -1,0 +1,51 @@
+<div class="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
+
+    <!-- Nome -->
+    <div>
+        <label for="{{ form.nome.id_for_label }}"
+               class="mb-2 block text-sm font-medium text-stone-300">
+            <i class="fa-solid fa-pizza-slice mr-2 text-orange-400"></i>
+            Nome da pizza
+        </label>
+        {{ form.nome }}
+    </div>
+
+    <!-- Preço -->
+    <div>
+        <label for="{{ form.preco.id_for_label }}"
+               class="mb-2 block text-sm font-medium text-stone-300">
+            <i class="fa-solid fa-dollar-sign mr-2 text-orange-400"></i>
+            Preço
+        </label>
+        {{ form.preco }}
+        {% for erro in form.preco.errors %}
+            <div class="mt-1 text-sm text-red-400">{{ erro }}</div>
+        {% endfor %}
+    </div>
+
+    <!-- Categoria -->
+    <div class="md:col-span-2">
+        <label for="{{ form.categoria.id_for_label }}"
+               class="mb-2 block text-sm font-medium text-stone-300">
+            <i class="fa-solid fa-list mr-2 text-orange-400"></i>
+            Categoria
+        </label>
+        {{ form.categoria }}
+        {% for erro in form.categoria.errors %}
+            <div class="mt-1 text-sm text-red-400">{{ erro }}</div>
+        {% endfor %}
+    </div>
+
+    <!-- Ingredientes -->
+    <div class="md:col-span-2">
+        <label for="{{ form.ingredientes.id_for_label }}"
+               class="mb-2 block text-sm font-medium text-stone-300">
+            <i class="fa-solid fa-carrot mr-2 text-orange-400"></i>
+            Ingredientes
+        </label>
+        {{ form.ingredientes }}
+        {% for erro in form.ingredientes.errors %}
+            <div class="mt-1 text-sm text-red-400">{{ erro }}</div>
+        {% endfor %}
+    </div>
+</div>
