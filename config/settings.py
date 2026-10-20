@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost'
-    'Sistema_pizza_rafael.onrender.com'
+    'sistema-pizza-rafael.onrender.com'
 ]
 
 
