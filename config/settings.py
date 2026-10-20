@@ -27,8 +27,8 @@ SECRET_KEY = 'django-insecure-g#44&hpt!ldtg0xztxj@8ia73k5gil&r(#g!0gy2mr#sey+=b$
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost'
-    'sistema-pizza-rafael.onrender.com'
+    'localhost',
+    'sistema-pizza-rafael.onrender.com',
 ]
 
 
